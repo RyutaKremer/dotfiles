@@ -49,9 +49,10 @@ set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を�
 
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<ESC>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
-inoremap ( '<ESC>
+inoremap ( ()<left>
+inoremap (<Enter> ()<Left><CR>
+inoremap [ []<left>
+inoremap [<Enter> []<Left><CR>
 inoremap ' ''<LEFT>
 inoremap " ""<LEFT>
 
