@@ -1,9 +1,8 @@
 #!/bin/bash
 
-for f in .??*
-do
-    [[ "$f" == ".git" ]] && continue
-    [[ "$f" == ".DS_Store" ]] && continue
+DOT_FILES=(.vimrc)
 
-    echo "link $f ~/$f"
+for f in ${DOT_FILES[@]}
+do
+    link ./$f ~/$f
 done

@@ -6,6 +6,7 @@ set title
 set number
 " see current line number
 set cursorline
+highlight CursorLine cterm=NONE ctermfg=white ctermbg=black
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
 " インデントはスマートインデント
@@ -25,8 +26,6 @@ vnoremap j gj
 vnoremap k gk
 " シンタックスハイライトの有効化
 syntax enable
-
-
 
 " tab size
 set tabstop=4
@@ -48,7 +47,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を可能にする
 
 inoremap { {}<Left>
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap {<Enter> {}<Left><CR><CR><BS><Up><Tab>
 inoremap ( ()<left>
 inoremap (<Enter> ()<Left><CR>
 inoremap [ []<left>
