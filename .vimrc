@@ -47,7 +47,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 set whichwrap=b,s,h,l,<,>,[,],~ "行頭、行末で行のカーソル移動を可能にする
 
 inoremap { {}<Left>
-inoremap {<Enter> {}<Left><CR><CR><BS><Up><Tab>
+inoremap {<Enter> {}<Left><CR><CR><BS><Up><Right>
 inoremap ( ()<left>
 inoremap (<Enter> ()<Left><CR>
 inoremap [ []<left>
