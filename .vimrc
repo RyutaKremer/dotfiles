@@ -27,7 +27,8 @@ vnoremap k gk
 " シンタックスハイライトの有効化
 syntax enable
 
-" tab size
+" indent (4 spaces)
+set expandtab
 set tabstop=4
 set shiftwidth=4
 set backspace=indent,eol,start
