@@ -1,8 +1,9 @@
 #!/bin/bash
 
 DOT_FILES=(.vimrc)
+DIR_PATH=$(cd $(dirname $0); pwd)
 
 for f in ${DOT_FILES[@]}
 do
-    ln -is ./$f ~/$f
+    ln -is $DIR_PATH/$f ~/$f
 done
