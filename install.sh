@@ -4,5 +4,5 @@ DOT_FILES=(.vimrc)
 
 for f in ${DOT_FILES[@]}
 do
-    link ./$f ~/$f
+    ln -i ./$f ~/$f
 done
