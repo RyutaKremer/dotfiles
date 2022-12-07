@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_FILES=(.vimrc)
+DOT_FILES=(.vimrc .ideavimrc)
 DIR_PATH=$(cd $(dirname $0); pwd)
 
 for f in ${DOT_FILES[@]}
