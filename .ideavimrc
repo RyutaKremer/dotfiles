@@ -1,2 +1,2 @@
 set clipboard=unnamed
-sethandler n:vim i:ide
+sethandler n:vim i-v:ide
